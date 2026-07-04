@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GameFeed is a compact Windows overlay for scrolling TikTok, Instagram Reels, YouTube Shorts, and Facebook Reels without leaving your game."
+    />
+    <meta name="theme-color" content="#080a0e" />
+    <meta property="og:title" content="GameFeed — Keep playing. Keep scrolling." />
+    <meta
+      property="og:description"
+      content="Your short-form feeds in one compact, customizable Windows gaming overlay."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://gamefeed.site/" />
+    <meta property="og:image" content="https://gamefeed.site/assets/gamefeed-logo-hero.jpg" />
+    <link rel="canonical" href="https://gamefeed.site/" />
+    <title>GameFeed — Short-form video over your game</title>
+    <link rel="icon" href="assets/gamefeed-logo-square.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="GameFeed home">
+          <img src="assets/gamefeed-logo-square.png" alt="" width="38" height="38" />
+          <span>GAMEFEED</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          data-menu-toggle
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-menu>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#faq">FAQ</a>
+          <button class="button button-small button-ghost" type="button" data-download>
+            Get GameFeed
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-glow hero-glow-one"></div>
+        <div class="hero-glow hero-glow-two"></div>
+
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span></span> Built for Windows gamers</div>
+          <h1>Keep playing.<br /><em>Keep scrolling.</em></h1>
+          <p class="hero-lede">
+            TikTok, Reels, and Shorts in one compact overlay that stays above your game—without
+            the constant alt-tabbing.
+          </p>
+          <div class="hero-actions">
+            <button class="button button-primary" type="button" data-download>
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 5.4 10.4 4v7.1H3V5.4Zm8.4-1.6L21 2v9.1h-9.6V3.8ZM3 12.1h7.4V19L3 17.6v-5.5Zm8.4 0H21V22l-9.6-1.8v-8.1Z" />
+              </svg>
+              Download for Windows
+            </button>
+            <a class="button button-text" href="#how-it-works">
+              See how it works <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="platform-row" aria-label="Supported platforms">
+            <span>TikTok</span><i></i><span>Instagram</span><i></i><span>YouTube</span><i></i><span>Facebook</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay" aria-label="GameFeed product preview">
+          <div class="game-scene" aria-hidden="true">
+            <img class="hero-brand-art" src="assets/gamefeed-logo-hero.jpg" alt="" />
+            <div class="scene-horizon"></div>
+            <div class="scene-mountain mountain-one"></div>
+            <div class="scene-mountain mountain-two"></div>
+            <div class="scene-hud hud-top">GAMEPLAY ACTIVE</div>
+            <div class="scene-hud hud-bottom"><b>87</b><span>ALIVE</span></div>
+            <div class="crosshair"></div>
+          </div>
+
+          <div class="app-window">
+            <div class="app-topbar">
+              <span class="app-back">←</span>
+              <strong>INSTAGRAM REELS</strong>
+              <div class="app-actions"><span>⌂</span><span>↻</span><span>☷</span></div>
+            </div>
+            <div class="feed-canvas">
+              <div class="video-card">
+                <div class="video-noise"></div>
+                <div class="video-orb orb-one"></div>
+                <div class="video-orb orb-two"></div>
+                <div class="video-caption">ONE MORE CLIP<br />BEFORE THE NEXT ROUND</div>
+                <div class="video-progress"><span></span></div>
+              </div>
+              <div class="social-rail" aria-hidden="true">
+                <div><span>♡</span><small>128K</small></div>
+                <div><span>◯</span><small>4,208</small></div>
+                <div><span>↗</span><small>Share</small></div>
+                <div><span>⋯</span></div>
+              </div>
+            </div>
+            <div class="app-nav" aria-hidden="true">
+              <span>⌂</span><span>⌕</span><b>▶</b><span>＋</span><span>◇</span>
+            </div>
+          </div>
+
+          <div class="floating-chip chip-top"><span class="status-dot"></span> Always on top</div>
+          <div class="floating-chip chip-bottom">Hide overlay</div>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="GameFeed highlights">
+        <div><strong>4</strong><span>short-form feeds</span></div>
+        <div><strong>1</strong><span>compact overlay</span></div>
+        <div><strong>∞</strong><span>ways to position it</span></div>
+      </section>
+
+      <section class="section features" id="features">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span></span> Everything in reach</div>
+          <h2>Your feed, tuned for <em>game time.</em></h2>
+          <p>GameFeed stays out of the way until you need it—and stays exactly where you put it.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-wide reveal">
+            <div class="feature-icon"><span>⌁</span></div>
+            <div>
+              <span class="card-kicker">MULTI-PLATFORM</span>
+              <h3>One home for every short.</h3>
+              <p>Jump between TikTok, Instagram Reels, YouTube Shorts, and Facebook Reels from one clean launcher.</p>
+            </div>
+            <div class="mini-platforms" aria-hidden="true">
+              <span>T</span><span>I</span><span>Y</span><span>f</span>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><span>⌨</span></div>
+            <span class="card-kicker">GLOBAL CONTROLS</span>
+            <h3>Scroll without leaving your game.</h3>
+            <p>Assign keyboard keys or Mouse 4/5 for next, previous, mute, hide, and click-through.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><span>◩</span></div>
+            <span class="card-kicker">SMART SIZING</span>
+            <h3>Every platform fits differently.</h3>
+            <p>Platform-specific ratios keep controls and videos visible as the overlay scales.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><span>◉</span></div>
+            <span class="card-kicker">CLICK-THROUGH</span>
+            <h3>Watch it. Or play through it.</h3>
+            <p>Toggle click-through and opacity when you want the feed visible without blocking your game.</p>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-icon"><span>▣</span></div>
+            <span class="card-kicker">ALWAYS ON TOP</span>
+            <h3>Built to stay in the corner.</h3>
+            <p>Native Windows topmost behavior keeps GameFeed above borderless and windowed games.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section workflow" id="how-it-works">
+        <div class="workflow-panel">
+          <div class="section-heading reveal">
+            <div class="eyebrow"><span></span> Zero learning curve</div>
+            <h2>From install to scrolling in <em>three moves.</em></h2>
+          </div>
+          <ol class="step-list">
+            <li class="reveal">
+              <span class="step-number">01</span>
+              <div><h3>Open your platform</h3><p>Choose a feed and sign in normally inside its secure embedded browser.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="step-number">02</span>
+              <div><h3>Place the overlay</h3><p>Resize it, move it to a corner, set opacity, and save your preferred layout.</p></div>
+            </li>
+            <li class="reveal">
+              <span class="step-number">03</span>
+              <div><h3>Keep playing</h3><p>Use your custom keys to scroll, mute, hide, or enable click-through globally.</p></div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section control-showcase">
+        <div class="control-copy reveal">
+          <div class="eyebrow"><span></span> Make it yours</div>
+          <h2>Your controls.<br /><em>Your layout.</em></h2>
+          <p>GameFeed remembers the setup that works for you, from window size to global shortcuts.</p>
+          <ul class="check-list">
+            <li><span>✓</span> Keyboard and side-mouse shortcuts</li>
+            <li><span>✓</span> Adjustable transparency</li>
+            <li><span>✓</span> Freeze, save, and restore layouts</li>
+            <li><span>✓</span> Instant hide and show</li>
+          </ul>
+        </div>
+
+        <div class="settings-mockup reveal reveal-delay" aria-label="Custom controls preview">
+          <div class="settings-title"><span>←</span><b>HELP &amp; SETTINGS</b></div>
+          <div class="settings-card">
+            <span class="card-kicker">CUSTOM OVERLAY CONTROLS</span>
+            <div class="setting-row"><span>Previous video</span><kbd>Custom</kbd></div>
+            <div class="setting-row"><span>Next video</span><kbd>Custom</kbd></div>
+            <div class="setting-row"><span>Mute / unmute</span><kbd>Custom</kbd></div>
+            <div class="setting-row"><span>Show / hide overlay</span><kbd>Custom</kbd></div>
+            <div class="setting-row"><span>Click-through</span><kbd>Custom</kbd></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span></span> Questions, answered</div>
+          <h2>Before you <em>queue up.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details class="reveal">
+            <summary>Which games does GameFeed work with?<span>＋</span></summary>
+            <p>GameFeed works best with windowed and borderless-fullscreen games. Hardware-exclusive fullscreen and some anti-cheat systems can block third-party overlays.</p>
+          </details>
+          <details class="reveal">
+            <summary>Do I sign in through GameFeed?<span>＋</span></summary>
+            <p>Each platform opens in its own embedded browser view. You sign in on the platform’s website, and the local browser profile keeps that session available.</p>
+          </details>
+          <details class="reveal">
+            <summary>Can I make the overlay transparent?<span>＋</span></summary>
+            <p>Yes. You can adjust opacity, enable click-through, freeze the size, and save the placement that fits your setup.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does GameFeed support custom shortcuts?<span>＋</span></summary>
+            <p>Yes. Previous, next, mute, show/hide, and click-through can use supported keyboard keys or Mouse 4/5.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="cta-section" id="download">
+        <div class="cta-glow"></div>
+        <div class="cta-inner reveal">
+          <img src="assets/gamefeed-logo-square.png" alt="" width="86" height="86" />
+          <h2>Your queue can wait.<br /><em>Your feed doesn’t have to.</em></h2>
+          <p>Bring short-form video into the corner of your game.</p>
+          <button class="button button-primary button-large" type="button" data-download>
+            Download GameFeed for Windows
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand" href="#top">
+        <img src="assets/gamefeed-logo-square.png" alt="" width="34" height="34" />
+        <span>GAMEFEED</span>
+      </a>
+      <p>Keep playing. Keep scrolling.</p>
+      <span>© <span data-year></span> GameFeed</span>
+    </footer>
+
+    <dialog class="download-dialog" data-download-dialog>
+      <button class="dialog-close" type="button" aria-label="Close" data-dialog-close>×</button>
+      <img src="assets/gamefeed-logo-square.png" alt="" width="72" height="72" />
+      <span class="card-kicker">WINDOWS PRIVATE BETA</span>
+      <h2>GameFeed is almost ready.</h2>
+      <p>Add your Windows release URL in <code>website/script.js</code> to turn every download button live.</p>
+      <button class="button button-primary" type="button" data-dialog-close>Got it</button>
+    </dialog>
+  </body>
+</html>

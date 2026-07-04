@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>GameFeed Sponsored Placement</title>
+    <style>
+      * { box-sizing: border-box; }
+      html, body { width: 100%; height: 100%; margin: 0; }
+      body {
+        display: grid;
+        place-items: center;
+        overflow: hidden;
+        background: #090611;
+        color: #fff;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      .placement {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        place-items: center;
+        padding: 36px 22px 22px;
+        background:
+          radial-gradient(circle at 10% 10%, #00d9ff22, transparent 38%),
+          radial-gradient(circle at 90% 90%, #ff3bdd28, transparent 40%),
+          #090611;
+        text-align: center;
+      }
+      .placeholder { max-width: 310px; }
+      .placeholder strong { display: block; margin-bottom: 8px; font-size: 18px; }
+      .placeholder span { color: #aaa4bd; font-size: 12px; line-height: 1.5; }
+    </style>
+  </head>
+  <body>
+    <main class="placement" id="ad-placement" aria-label="Sponsored content">
+      <!-- Insert the selected provider's placement code inside this element. -->
+      <div class="placeholder">
+        <strong>Sponsored placement</strong>
+        <span>This private page is ready for your future ad provider code.</span>
+      </div>
+    </main>
+  </body>
+</html>
