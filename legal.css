@@ -69,6 +69,9 @@
 .price-card .button { width: 100%; }
 .button-disabled { border-color: var(--line); background: rgba(255, 255, 255, 0.06); color: #aca6bf; cursor: not-allowed; }
 .pricing-note { margin-top: 22px; color: #8d88a9; font-size: 12px; line-height: 1.65; text-align: center; }
+.pricing-summary { margin-top: 26px; }
+.pricing-summary ul { margin: 0; padding-left: 22px; }
+.pricing-summary li { margin: 7px 0; }
 
 .legal-footer {
   width: min(calc(100% - 40px), var(--max));
