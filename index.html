@@ -46,6 +46,7 @@
         <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-menu>
           <a href="#features">Features</a>
           <a href="#how-it-works">How it works</a>
+          <a href="#install">Install</a>
           <a href="#faq">FAQ</a>
           <button class="button button-small button-ghost" type="button" data-download>
             Get GameFeed
@@ -77,6 +78,7 @@
               See how it works <span aria-hidden="true">→</span>
             </a>
           </div>
+          <p class="download-note"><span aria-hidden="true">✓</span> Official Windows installer · No ZIP extraction required</p>
           <div class="platform-row" aria-label="Supported platforms">
             <span>TikTok</span><i></i><span>Instagram</span><i></i><span>YouTube</span><i></i><span>Facebook</span>
           </div>
@@ -251,6 +253,51 @@
             <summary>Does GameFeed support custom shortcuts?<span>＋</span></summary>
             <p>Yes. Previous, next, mute, show/hide, and click-through can use supported keyboard keys or Mouse 4/5.</p>
           </details>
+          <details class="reveal">
+            <summary>Is the GameFeed download safe?<span>＋</span></summary>
+            <p>Yes. The download button uses GameFeed’s official GitHub Release and the installer contains only GameFeed and its required runtime files—no bundled offers or extra apps. The current release is not yet code-signed, so Windows may show an “unrecognized app” SmartScreen message even though the file came from the official source.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section install-section" id="install">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span></span> Simple Windows setup</div>
+          <h2>Download, install, <em>start scrolling.</em></h2>
+          <p>The new installer handles the app files and shortcuts for you. There is no ZIP folder to extract.</p>
+        </div>
+
+        <div class="install-layout">
+          <ol class="install-steps reveal">
+            <li>
+              <span>01</span>
+              <div><h3>Download the installer</h3><p>Choose “Download GameFeed Setup” and open <strong>GameFeed-Setup.exe</strong> from your browser’s Downloads list.</p></div>
+            </li>
+            <li>
+              <span>02</span>
+              <div><h3>Follow the setup window</h3><p>Choose Install. GameFeed is added to your Start Menu and a desktop shortcut is created automatically.</p></div>
+            </li>
+            <li>
+              <span>03</span>
+              <div><h3>Launch GameFeed</h3><p>If SmartScreen appears, confirm the filename is <strong>GameFeed-Setup.exe</strong>, then select <strong>More info → Run anyway</strong>. This notice appears because the early release is not yet code-signed.</p></div>
+            </li>
+          </ol>
+
+          <aside class="download-trust-card reveal reveal-delay" aria-label="Download safety information">
+            <div class="official-badge"><span aria-hidden="true">✓</span> OFFICIAL GAMEFEED DOWNLOAD</div>
+            <h3>A clean, direct installer.</h3>
+            <p>No additional programs, toolbars, or third-party installer offers. The file is published directly through GameFeed’s official GitHub Release.</p>
+            <ul>
+              <li><span>File</span><strong>GameFeed-Setup.exe</strong></li>
+              <li><span>Platform</span><strong>Windows 10/11 · 64-bit</strong></li>
+              <li><span>Size</span><strong>About 11 MB</strong></li>
+            </ul>
+            <details class="checksum">
+              <summary>Verify SHA-256 checksum</summary>
+              <code>d56ed6e79483e298b9bd41e7c18539949e3f44919a434b3156062f3682f3bd7f</code>
+            </details>
+            <button class="button button-primary button-large" type="button" data-download>Download GameFeed Setup</button>
+          </aside>
         </div>
       </section>
 
@@ -259,10 +306,11 @@
         <div class="cta-inner reveal">
           <img src="assets/gamefeed-logo-square.png" alt="" width="86" height="86" />
           <h2>Your queue can wait.<br /><em>Your feed doesn’t have to.</em></h2>
-          <p>Bring short-form video into the corner of your game.</p>
+          <p>Bring short-form video into the corner of your game. One installer—no extraction required.</p>
           <button class="button button-primary button-large" type="button" data-download>
-            Download GameFeed for Windows
+            Download GameFeed Setup (.exe)
           </button>
+          <small>Official download · Windows 10/11 · 64-bit · About 11 MB</small>
         </div>
       </section>
     </main>
@@ -275,14 +323,5 @@
       <p>Keep playing. Keep scrolling.</p>
       <span>© <span data-year></span> GameFeed</span>
     </footer>
-
-    <dialog class="download-dialog" data-download-dialog>
-      <button class="dialog-close" type="button" aria-label="Close" data-dialog-close>×</button>
-      <img src="assets/gamefeed-logo-square.png" alt="" width="72" height="72" />
-      <span class="card-kicker">WINDOWS PRIVATE BETA</span>
-      <h2>GameFeed is almost ready.</h2>
-      <p>Add your Windows release URL in <code>website/script.js</code> to turn every download button live.</p>
-      <button class="button button-primary" type="button" data-dialog-close>Got it</button>
-    </dialog>
   </body>
 </html>

@@ -12,11 +12,11 @@ py -3.12 -m http.server 4173 --directory website
 
 Then open `http://127.0.0.1:4173`.
 
-## Connect the download button
+## Download button
 
-Set `DOWNLOAD_URL` at the top of `script.js` to a GitHub Release asset, CDN
-file, or installer URL. Until a URL is provided, the download buttons show a
-private-beta message instead of opening a broken link.
+All download buttons use `DOWNLOAD_URL` near the top of `script.js`. It points
+to the latest official `GameFeed-Setup.exe` GitHub Release asset. Update that
+single constant if the installer host or filename changes.
 
 The site has no package dependencies and can be hosted on GitHub Pages,
 Cloudflare Pages, Netlify, or any static web server.

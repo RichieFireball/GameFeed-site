@@ -316,6 +316,15 @@ h2 em {
   flex-wrap: wrap;
 }
 
+.download-note {
+  margin: 14px 0 0;
+  color: #aeb7c4;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.download-note span { margin-right: 6px; color: var(--accent); }
+
 .platform-row {
   margin-top: 34px;
   display: flex;
@@ -684,6 +693,36 @@ kbd { min-width: 44px; padding: 7px 10px; border: 1px solid rgba(255, 255, 255, 
 .faq-list details[open] summary span { transform: rotate(45deg); }
 .faq-list p { max-width: 650px; padding: 0 50px 24px 0; color: var(--muted); line-height: 1.65; }
 
+.install-section { padding-top: 60px; }
+.install-layout { display: grid; grid-template-columns: 1.05fr 0.95fr; align-items: start; gap: 28px; }
+.install-steps { margin: 0; padding: 0; list-style: none; border-block: 1px solid var(--line); }
+.install-steps li { display: grid; grid-template-columns: 58px 1fr; gap: 18px; padding: 28px 0; border-bottom: 1px solid var(--line); }
+.install-steps li:last-child { border-bottom: 0; }
+.install-steps > li > span { padding-top: 4px; color: var(--accent); font-size: 12px; font-weight: 950; letter-spacing: 0.14em; }
+.install-steps h3 { margin: 0 0 8px; font-size: 20px; letter-spacing: -0.025em; }
+.install-steps p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.install-steps strong { color: #e7ebf1; }
+
+.download-trust-card {
+  padding: 30px;
+  border: 1px solid rgba(0, 217, 255, 0.26);
+  border-radius: 26px;
+  background: radial-gradient(circle at 100% 0, rgba(255, 59, 221, 0.14), transparent 34%), var(--bg-soft);
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.28);
+}
+.official-badge { display: inline-flex; align-items: center; gap: 8px; color: var(--accent); font-size: 10px; font-weight: 950; letter-spacing: 0.12em; }
+.official-badge span { width: 22px; height: 22px; display: grid; place-items: center; border-radius: 50%; background: rgba(117, 242, 178, 0.12); }
+.download-trust-card h3 { margin: 20px 0 10px; font-size: 29px; letter-spacing: -0.04em; }
+.download-trust-card > p { margin: 0 0 22px; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.download-trust-card ul { margin: 0 0 20px; padding: 0; list-style: none; border-block: 1px solid var(--line); }
+.download-trust-card li { min-height: 44px; display: flex; align-items: center; justify-content: space-between; gap: 18px; border-bottom: 1px solid var(--line); font-size: 12px; }
+.download-trust-card li:last-child { border-bottom: 0; }
+.download-trust-card li span { color: var(--muted); }
+.download-trust-card li strong { text-align: right; }
+.download-trust-card .button { width: 100%; margin-top: 22px; }
+.checksum summary { cursor: pointer; color: #cbd2dc; font-size: 12px; font-weight: 800; }
+.checksum code { display: block; margin-top: 10px; padding: 12px; overflow-wrap: anywhere; border-radius: 10px; background: #070910; color: #8fe9ff; font: 10px/1.6 ui-monospace, monospace; text-align: left; }
+
 .cta-section {
   position: relative;
   width: min(calc(100% - 40px), var(--max));
@@ -751,7 +790,7 @@ kbd { min-width: 44px; padding: 7px 10px; border: 1px solid rgba(255, 255, 255, 
   .game-scene { inset-inline: 8%; }
   .feature-card-wide { grid-template-columns: auto 1fr; }
   .mini-platforms { grid-column: 2; }
-  .control-showcase, .faq { grid-template-columns: 1fr; gap: 50px; }
+  .control-showcase, .faq, .install-layout { grid-template-columns: 1fr; gap: 50px; }
   .settings-mockup { max-width: 680px; width: 100%; }
   .faq .section-heading { margin-bottom: 0; }
 }
