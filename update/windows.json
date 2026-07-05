@@ -1,0 +1,7 @@
+{
+  "version": "1.0.3",
+  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.3/GameFeed-Setup.exe",
+  "sha256": "125a54183caeb058eb52d9a8dc7e7b5ffcf7812a6e7a3f8818de8dd142fabf42",
+  "releaseNotes": "GameFeed 1.0.3 adds automatic update checks with verified installer downloads.",
+  "mandatory": false
+}
