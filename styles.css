@@ -755,6 +755,8 @@ kbd { min-width: 44px; padding: 7px 10px; border: 1px solid rgba(255, 255, 255, 
 
 .site-footer > span { justify-self: end; }
 .site-footer p { margin: 0; }
+.site-footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.site-footer .footer-links a:hover, .site-footer .footer-links a:focus-visible { color: white; }
 
 .download-dialog {
   width: min(430px, calc(100% - 32px));
@@ -832,7 +834,7 @@ kbd { min-width: 44px; padding: 7px 10px; border: 1px solid rgba(255, 255, 255, 
   .faq-list summary { font-size: 14px; }
   .cta-section { padding: 75px 22px; }
   .site-footer { padding: 32px 0; grid-template-columns: 1fr auto; }
-  .site-footer p { display: none; }
+  .site-footer .footer-links { grid-column: 1 / -1; grid-row: 2; display: flex; }
 }
 
 @media (prefers-reduced-motion: reduce) {
