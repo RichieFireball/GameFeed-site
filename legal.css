@@ -73,6 +73,14 @@
 .pricing-summary ul { margin: 0; padding-left: 22px; }
 .pricing-summary li { margin: 7px 0; }
 
+.checkout-main { min-height: calc(100vh - 170px); }
+.checkout-card { display: grid; grid-template-columns: auto 1fr; align-items: start; gap: 24px; }
+.checkout-card img { border-radius: 18px; box-shadow: 0 0 38px rgba(255, 59, 221, 0.24); }
+.checkout-card h2 { margin-top: 4px; }
+.checkout-card [data-checkout-status][data-state="success"] { color: #75f2b2; }
+.checkout-card [data-checkout-status][data-state="error"] { color: #ff8095; }
+.checkout-fine-print { margin-top: 20px; color: #8d88a9 !important; font-size: 12px; }
+
 .legal-footer {
   width: min(calc(100% - 40px), var(--max));
   margin: 0 auto;
@@ -96,5 +104,6 @@
   .legal-hero h1 { font-size: clamp(44px, 15vw, 64px); }
   .pricing-grid { grid-template-columns: 1fr; }
   .price-card ul { min-height: 0; }
+  .checkout-card { grid-template-columns: 1fr; }
   .legal-footer { width: min(calc(100% - 28px), var(--max)); align-items: flex-start; flex-direction: column; }
 }
