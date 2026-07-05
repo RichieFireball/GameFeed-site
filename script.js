@@ -1,5 +1,4 @@
-const DOWNLOAD_URL =
-  "https://github.com/RichieFireball/GameFeed-site/releases/latest/download/GameFeed-Setup.exe";
+const DOWNLOAD_URL = "https://gamefeed.site/download/GameFeed-Setup.exe";
 
 const header = document.querySelector("[data-header]");
 const menu = document.querySelector("[data-menu]");
