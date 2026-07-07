@@ -1,7 +1,7 @@
 {
-  "version": "1.0.5",
-  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.5/GameFeed-Setup.exe",
-  "sha256": "83ec2385d6fef95e1aec1692f8e2b6d64fe330684dd97cb3af88a62032c6bc16",
-  "releaseNotes": "GameFeed 1.0.5 adds a five-second sponsored-content countdown before the close button appears.",
+  "version": "1.0.6",
+  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.6/GameFeed-Setup.exe",
+  "sha256": "4aa44021bf288b3543d7d24434c2d87275c50f63ece17b1958eb523b4ae5dd26",
+  "releaseNotes": "GameFeed 1.0.6 adds reliable platform login and fixes YouTube sign-in returning to Shorts before authentication completes.",
   "mandatory": false
 }
