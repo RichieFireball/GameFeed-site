@@ -720,6 +720,17 @@ kbd { min-width: 44px; padding: 7px 10px; border: 1px solid rgba(255, 255, 255, 
 .download-trust-card li span { color: var(--muted); }
 .download-trust-card li strong { text-align: right; }
 .download-trust-card .button { width: 100%; margin-top: 22px; }
+.warning-note {
+  margin: 16px 0 0;
+  padding: 14px;
+  border: 1px solid rgba(255, 173, 89, 0.26);
+  border-radius: 14px;
+  background: rgba(255, 173, 89, 0.08);
+  color: #d7dce5;
+  font-size: 12px;
+  line-height: 1.55;
+}
+.warning-note strong { color: #ffcf8a; }
 .checksum summary { cursor: pointer; color: #cbd2dc; font-size: 12px; font-weight: 800; }
 .checksum code { display: block; margin-top: 10px; padding: 12px; overflow-wrap: anywhere; border-radius: 10px; background: #070910; color: #8fe9ff; font: 10px/1.6 ui-monospace, monospace; text-align: left; }
 
