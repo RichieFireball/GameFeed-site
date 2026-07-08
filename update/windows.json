@@ -1,7 +1,7 @@
 {
-  "version": "1.0.6",
-  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.6/GameFeed-Setup.exe",
-  "sha256": "4aa44021bf288b3543d7d24434c2d87275c50f63ece17b1958eb523b4ae5dd26",
-  "releaseNotes": "GameFeed 1.0.6 adds reliable platform login and fixes YouTube sign-in returning to Shorts before authentication completes.",
+  "version": "1.0.7",
+  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.7/GameFeed-Setup.exe",
+  "sha256": "93bcd76b387ef59638cb1cec946517a3767599822d498c73406bdb9f97248675",
+  "releaseNotes": "GameFeed 1.0.7 improves sponsored content placement by presenting ads in a centered, compact panel that fits the overlay more naturally.",
   "mandatory": false
 }
