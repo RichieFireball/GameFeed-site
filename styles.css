@@ -324,6 +324,16 @@ h2 em {
 }
 
 .download-note span { margin-right: 6px; color: var(--accent); }
+.warning-jump {
+  display: inline-flex;
+  margin-top: 8px;
+  color: #ffcf8a;
+  font-size: 11px;
+  font-weight: 850;
+  text-decoration: none;
+}
+.warning-jump:hover,
+.warning-jump:focus-visible { color: white; text-decoration: underline; }
 
 .platform-row {
   margin-top: 34px;
@@ -721,7 +731,7 @@ kbd { min-width: 44px; padding: 7px 10px; border: 1px solid rgba(255, 255, 255, 
 .download-trust-card li strong { text-align: right; }
 .download-trust-card .button { width: 100%; margin-top: 22px; }
 .warning-note {
-  margin: 16px 0 0;
+  margin: 24px 0 0;
   padding: 14px;
   border: 1px solid rgba(255, 173, 89, 0.26);
   border-radius: 14px;
