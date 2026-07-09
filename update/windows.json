@@ -1,7 +1,7 @@
 {
-  "version": "1.0.7",
-  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.7/GameFeed-Setup.exe",
-  "sha256": "93bcd76b387ef59638cb1cec946517a3767599822d498c73406bdb9f97248675",
-  "releaseNotes": "GameFeed 1.0.7 improves sponsored content placement by presenting ads in a centered, compact panel that fits the overlay more naturally.",
+  "version": "1.0.8",
+  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.8/GameFeed-Setup.exe",
+  "sha256": "c8612f47af9fec44e29fdad65d31378b83d2f301627232e0d8197589bc9daf56",
+  "releaseNotes": "GameFeed 1.0.8 adds a reliable YouTube sound button that keeps Shorts muted or unmuted across scrolling without fighting playback.",
   "mandatory": false
 }
