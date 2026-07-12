@@ -29,12 +29,33 @@
         text-align: center;
       }
       .loading { color: #aaa4bd; font-size: 12px; letter-spacing: 0.02em; }
+      .loading[hidden] { display: none; }
+      iframe { max-width: 100% !important; }
     </style>
   </head>
   <body>
     <main class="placement" id="ad-placement" aria-label="Sponsored content">
-      <div class="loading">Loading sponsored content…</div>
+      <div class="loading">Loading sponsored content&hellip;</div>
     </main>
+    <script>
+      (() => {
+        const loading = document.querySelector(".loading");
+        let readyReported = false;
+        const hideLoadingWhenReady = () => {
+          if (!document.querySelector("iframe")) return;
+          loading.hidden = true;
+          if (!readyReported && window.flutter_inappwebview) {
+            readyReported = true;
+            window.flutter_inappwebview.callHandler("gameFeedAdReady");
+          }
+        };
+        new MutationObserver(hideLoadingWhenReady).observe(document.body, {
+          childList: true,
+          subtree: true,
+        });
+        hideLoadingWhenReady();
+      })();
+    </script>
     <script src="https://pl30234834.effectivecpmnetwork.com/0c/1b/a8/0c1ba8dc70a28a060a2bd22618fd4805.js"></script>
   </body>
 </html>

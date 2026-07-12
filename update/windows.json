@@ -1,7 +1,7 @@
 {
-  "version": "1.0.9",
-  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.9/GameFeed-Setup.exe",
-  "sha256": "dc22b864ff39b33eeaf0ae4d21db305bb1f9b85c05276fd37bbe3ed734ca3d91",
-  "releaseNotes": "GameFeed 1.0.9 refreshes the desktop interface, adds clear platform login and logout controls, improves overlay controls, and remembers saved layouts between launches.",
+  "version": "1.0.10",
+  "installerUrl": "https://github.com/RichieFireball/GameFeed-site/releases/download/v1.0.10/GameFeed-Setup.exe",
+  "sha256": "42e279e39004c4d29327b2fc9a1141efecdb682d5f79054c29a659f3c5ef3a02",
+  "releaseNotes": "GameFeed 1.0.10 hardens embedded browsing and automatic updates, adds privacy controls, and refreshes sponsored placements with clearer controls and creative-aware timing.",
   "mandatory": false
 }
