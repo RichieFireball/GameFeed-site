@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="theme-color" content="#080a0e" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://api.github.com; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Owner analytics | GameFeed</title>
+    <link rel="icon" href="../assets/gamefeed-logo-square.png" type="image/png" />
+    <link rel="stylesheet" href="owner.css" />
+    <script src="owner.js" defer></script>
+  </head>
+  <body>
+    <div class="page-glow page-glow-one" aria-hidden="true"></div>
+    <div class="page-glow page-glow-two" aria-hidden="true"></div>
+
+    <header class="owner-header">
+      <a class="brand" href="../" aria-label="Return to the GameFeed website">
+        <img src="../assets/gamefeed-logo-square.png" width="38" height="38" alt="" />
+        <span>GAMEFEED</span>
+      </a>
+      <span class="private-badge"><i aria-hidden="true"></i> Owner view</span>
+    </header>
+
+    <main class="owner-shell">
+      <section class="access-card" data-access-panel>
+        <div class="lock-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M7.5 10V7.5a4.5 4.5 0 0 1 9 0V10m-10 0h11a1.5 1.5 0 0 1 1.5 1.5v7A1.5 1.5 0 0 1 17.5 20h-11A1.5 1.5 0 0 1 5 18.5v-7A1.5 1.5 0 0 1 6.5 10Zm5.5 4v2.5" />
+          </svg>
+        </div>
+        <p class="eyebrow"><span></span> Private analytics</p>
+        <h1>Owner access required.</h1>
+        <p class="access-copy">
+          Authenticate with a fine-grained GitHub token. The dashboard opens only for
+          <strong>RichieFireball</strong>.
+        </p>
+
+        <form class="access-form" data-access-form>
+          <label for="github-token">GitHub token</label>
+          <div class="token-field">
+            <input
+              id="github-token"
+              name="github-token"
+              type="password"
+              autocomplete="off"
+              autocapitalize="none"
+              spellcheck="false"
+              placeholder="github_pat_..."
+              required
+              data-token-input
+            />
+            <button type="button" class="reveal-token" aria-label="Show token" data-reveal-token>
+              Show
+            </button>
+          </div>
+          <button class="primary-button" type="submit" data-unlock-button>
+            <span data-unlock-label>Verify and open dashboard</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite" data-access-status></p>
+        </form>
+
+        <div class="privacy-note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 4.6 2.8 8 7 10 4.2-2 7-5.4 7-10V6l-7-3Zm-3 9 2 2 4-4" /></svg>
+          <p>Your token stays in this tab's memory and is sent only to GitHub's API. It is never saved by this page.</p>
+        </div>
+      </section>
+
+      <section class="dashboard" hidden data-dashboard>
+        <div class="dashboard-heading">
+          <div>
+            <p class="eyebrow"><span></span> Release analytics</p>
+            <h1>Download overview</h1>
+            <p class="dashboard-subtitle">Official Windows installer downloads across every public GameFeed release.</p>
+          </div>
+          <div class="dashboard-actions">
+            <button class="icon-button" type="button" data-refresh>Refresh</button>
+            <button class="icon-button icon-button-muted" type="button" data-lock>Lock</button>
+          </div>
+        </div>
+
+        <div class="identity-row">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span>Authenticated as <strong data-owner-login>RichieFireball</strong></span>
+          <span class="identity-divider" aria-hidden="true"></span>
+          <span data-last-updated>Loading release data...</span>
+        </div>
+
+        <div class="metric-grid" aria-label="Download summary">
+          <article class="metric-card metric-card-primary">
+            <span class="metric-label">All-time downloads</span>
+            <strong data-total-downloads>--</strong>
+            <small>Windows installer assets</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Latest release</span>
+            <strong data-latest-downloads>--</strong>
+            <small data-latest-version>Waiting for GitHub</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label">Tracked releases</span>
+            <strong data-release-count>--</strong>
+            <small data-tracking-since>Public releases</small>
+          </article>
+        </div>
+
+        <section class="release-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="panel-kicker">Release history</p>
+              <h2>Downloads by version</h2>
+            </div>
+            <span class="counter-source">Source: GitHub Releases</span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Version</th>
+                  <th scope="col">Published</th>
+                  <th scope="col">Installer size</th>
+                  <th scope="col" class="number-cell">Downloads</th>
+                </tr>
+              </thead>
+              <tbody data-release-rows></tbody>
+            </table>
+          </div>
+          <p class="count-note">GitHub reports asset downloads, not unique people or devices.</p>
+          <p class="dashboard-status" role="status" aria-live="polite" data-dashboard-status></p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
